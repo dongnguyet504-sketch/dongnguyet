@@ -15,15 +15,18 @@
         }
 
         body {
-            font-family: -apple-system, system-ui, Arial;
+            font-family: -apple-system, system-ui, Arial, sans-serif;
             background: var(--bg-color);
             margin: 0;
             color: var(--text-main);
         }
 
+        /* 🌄 ẢNH BÌA HÀ GIANG */
         .cover-photo {
-            height: 180px;
-            background: linear-gradient(135deg, #0077b5, #0e4b7d);
+            height: 200px;
+            background: url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
         }
 
         .container {
@@ -130,12 +133,14 @@
 
 <body>
 
+<!-- 🌄 COVER HÀ GIANG -->
 <div class="cover-photo"></div>
 
 <div class="container">
 
-    <!-- 個人資料 -->
+    <!-- PROFILE -->
     <header class="card profile-header">
+
         <div class="photo-container">
             <img src="images/aa.jpg" alt="profile">
         </div>
@@ -146,36 +151,35 @@
         <p class="location">黎明技術學院 · 台灣新北市</p>
 
         <div class="contact-info">
-            <span>📧 <a href="mailto:dongnguyet504@gmail.com">電子郵件</a></span>
-            <span>📞 <a href="tel:0970126287">電話</a></span>
+            <span>📧 <a href="mailto:dongnguyet504@gmail.com">Email</a></span>
+            <span>📞 <a href="tel:0970126287">Phone</a></span>
             <span>📘 <a href="https://www.facebook.com/dongnguyet.thy09" target="_blank">Facebook</a></span>
         </div>
 
         <a class="btn-primary" href="mailto:dongnguyet504@gmail.com">聯絡我</a>
     </header>
 
-    <!-- 關於我 -->
+    <!-- ABOUT -->
     <section class="card">
         <h2>關於我</h2>
         <p>
-            我目前就讀於黎明技術學院數位多媒體設計系，
-            熱愛視覺設計與數位創作，專注於影像與內容製作。
+            我是一名數位多媒體設計學生，熱愛視覺創作、影像設計與數位內容製作。
         </p>
     </section>
 
-    <!-- 家鄉 -->
+    <!-- HOMETOWN -->
     <section class="card">
         <h2>家鄉</h2>
         <div class="item">
             <div class="item-logo">VN</div>
             <div>
                 <h3>越南北寧省</h3>
-                <p>我的家鄉，文化豐富且生活安穩。</p>
+                <p>文化豐富、生活安穩的家鄉。</p>
             </div>
         </div>
     </section>
 
-    <!-- 學歷 -->
+    <!-- EDUCATION -->
     <section class="card">
         <h2>學歷</h2>
         <div class="item">
@@ -187,19 +191,19 @@
         </div>
     </section>
 
-    <!-- 工作經驗 -->
+    <!-- WORK -->
     <section class="card">
-        <h2>工作經驗</h2>
+        <h2>實習經驗</h2>
         <div class="item">
             <div class="item-logo">GAR</div>
             <div>
                 <h3>Garmin 林口</h3>
-                <p>實習設計與數位內容支援</p>
+                <p>設計與數位內容支援</p>
             </div>
         </div>
     </section>
 
-    <!-- 越南景點 -->
+    <!-- VIETNAM PLACES -->
     <section class="card">
         <h2>越南美麗景點</h2>
 
@@ -207,7 +211,7 @@
             <div class="item-logo">HLB</div>
             <div>
                 <h3>下龍灣</h3>
-                <p>世界自然遺產，石灰岩海上奇景。</p>
+                <p>世界自然遺產，海上石灰岩奇觀。</p>
             </div>
         </div>
 
@@ -215,7 +219,7 @@
             <div class="item-logo">DNG</div>
             <div>
                 <h3>峴港</h3>
-                <p>現代海濱城市與美麗海灘。</p>
+                <p>美麗海灘與現代城市結合。</p>
             </div>
         </div>
 
@@ -223,7 +227,7 @@
             <div class="item-logo">HỘI</div>
             <div>
                 <h3>會安古鎮</h3>
-                <p>充滿文化與歷史的燈籠古城。</p>
+                <p>燈籠古城，文化歷史豐富。</p>
             </div>
         </div>
 
@@ -239,12 +243,12 @@
             <div class="item-logo">PQ</div>
             <div>
                 <h3>富國島</h3>
-                <p>越南最美的海島之一。</p>
+                <p>越南最美海島之一。</p>
             </div>
         </div>
     </section>
 
-    <!-- 興趣 -->
+    <!-- SKILLS -->
     <section class="card">
         <h2>興趣</h2>
         <div class="skills">
@@ -259,7 +263,7 @@
 </div>
 
 <footer style="text-align:center; padding:20px; font-size:12px; color:#666;">
-    © 2026 同氏月 個人作品集
+    © 2026 同氏月 Portfolio
 </footer>
 
 </body>
