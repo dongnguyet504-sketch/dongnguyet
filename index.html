@@ -19,14 +19,9 @@
             background: var(--bg-color);
             margin: 0;
             color: var(--text-main);
-            animation: fadeIn 0.8s ease;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
+        /* 🌸 ẢNH BÌA NHIỀU HOA */
         .cover-photo {
             height: 200px;
             background: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1600&q=80');
@@ -46,12 +41,6 @@
             border-radius: 10px;
             padding: 24px;
             margin-bottom: 20px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
 
         .profile-header {
@@ -105,10 +94,6 @@
             font-weight: 600;
         }
 
-        .btn-primary:hover {
-            background: #004182;
-        }
-
         h2 { margin-top: 0; font-size: 20px; }
 
         .item {
@@ -143,65 +128,58 @@
             font-weight: 600;
             font-size: 14px;
         }
-
-        @media (max-width: 600px) {
-            .photo-container {
-                width: 100px;
-                height: 100px;
-                top: -50px;
-            }
-
-            h1 {
-                font-size: 22px;
-            }
-
-            .container {
-                margin-top: -50px;
-            }
-        }
     </style>
 </head>
 
 <body>
 
+<!-- 🌸 COVER FLOWER -->
 <div class="cover-photo"></div>
 
 <div class="container">
 
+    <!-- PROFILE -->
     <header class="card profile-header">
 
         <div class="photo-container">
-            <img src="https://i.imgur.com/your-image.jpg" alt="profile">
+            <img src="images/aa.jpg" alt="profile">
         </div>
 
         <h1>同氏月（mikila）</h1>
-        <p class="job-title">Digital Portfolio | Mikila</p>
+        <p class="job-title">NguyetChay</p>
         <p class="job-title">數位多媒體設計師｜視覺傳達專業</p>
         <p class="location">黎明技術學院 · 台灣新北市</p>
 
         <div class="contact-info">
             <span>📧 <a href="mailto:dongnguyet504@gmail.com">Email</a></span>
             <span>📞 <a href="tel:0970126287">Phone</a></span>
-            <span>📘 <a href="https://www.facebook.com/dongnguyet.thy09" target="_blank" rel="noopener">Facebook</a></span>
-            <span>🎵 <a href="https://www.tiktok.com/@anhnguyet83867" target="_blank" rel="noopener">@anhnguyet83867</a></span>
+            <span>📘 <a href="https://www.facebook.com/dongnguyet.thy09" target="_blank">Facebook</a></span>
         </div>
 
         <a class="btn-primary" href="mailto:dongnguyet504@gmail.com">聯絡我</a>
     </header>
 
+    <!-- ABOUT (TIẾNG TRUNG) -->
     <section class="card">
         <h2>關於我</h2>
+
         <p>
             我目前就讀於黎明技術學院數位多媒體設計系，專注於視覺傳達設計、影像製作與數位內容創作。
+            在學習過程中，我逐漸培養了對設計的熱情，並積極提升自己的創意能力與技術能力。
         </p>
+
         <p>
             我喜歡透過設計來表達想法，將抽象概念轉化為具有視覺衝擊力的作品。
+            無論是平面設計、影像剪輯或數位藝術，我都希望能持續學習與成長。
         </p>
+
         <p>
-            未來我希望能成為一名專業的多媒體設計師，創造更高價值的作品。
+            未來我希望能成為一名專業的多媒體設計師，參與更多創意專案，
+            並將所學應用於實際工作中，創造更高價值的作品。
         </p>
     </section>
 
+    <!-- HOMETOWN -->
     <section class="card">
         <h2>家鄉</h2>
         <div class="item">
@@ -213,6 +191,7 @@
         </div>
     </section>
 
+    <!-- EDUCATION -->
     <section class="card">
         <h2>學歷</h2>
         <div class="item">
@@ -224,6 +203,7 @@
         </div>
     </section>
 
+    <!-- WORK -->
     <section class="card">
         <h2>實習經驗</h2>
         <div class="item">
@@ -235,6 +215,52 @@
         </div>
     </section>
 
+    <!-- VIETNAM -->
+    <section class="card">
+        <h2>越南美麗景點</h2>
+
+        <div class="item">
+            <div class="item-logo">HLB</div>
+            <div>
+                <h3>下龍灣</h3>
+                <p>世界自然遺產，石灰岩海上奇觀。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-logo">DNG</div>
+            <div>
+                <h3>峴港</h3>
+                <p>現代海濱城市與美麗海灘。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-logo">HỘI</div>
+            <div>
+                <h3>會安古鎮</h3>
+                <p>充滿文化與歷史的燈籠古城。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-logo">SP</div>
+            <div>
+                <h3>沙壩</h3>
+                <p>梯田與山景，非常壯麗。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-logo">PQ</div>
+            <div>
+                <h3>富國島</h3>
+                <p>越南最美海島之一。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
     <section class="card">
         <h2>興趣</h2>
         <div class="skills">
