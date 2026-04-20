@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>同氏月 | 個人專業檔案</title>
+
     <style>
         :root {
             --linkedin-blue: #0a66c2;
@@ -14,19 +15,15 @@
         }
 
         body {
-            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.5;
+            font-family: -apple-system, system-ui, Arial;
+            background: var(--bg-color);
             margin: 0;
-            padding: 0;
+            color: var(--text-main);
         }
 
-        /* 頂部封面圖裝飾 */
         .cover-photo {
             height: 180px;
-            background: linear-gradient(135deg, #0077b5 0%, #0e4b7d 100%);
-            width: 100%;
+            background: linear-gradient(135deg, #0077b5, #0e4b7d);
         }
 
         .container {
@@ -35,32 +32,29 @@
             padding: 0 15px;
         }
 
-        /* 卡片設計 */
         .card {
             background: #fff;
-            border-radius: 8px;
             border: 1px solid var(--card-border);
+            border-radius: 10px;
             padding: 24px;
             margin-bottom: 20px;
-            position: relative;
         }
 
-        /* 個人大頭貼區塊 */
         .profile-header {
             padding-top: 80px;
+            position: relative;
         }
 
         .photo-container {
             position: absolute;
             top: -80px;
             left: 24px;
-            width: 152px;
-            height: 152px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            border: 4px solid #fff;
             overflow: hidden;
-            background-color: #f0f0f0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 4px solid #fff;
+            background: #eee;
         }
 
         .photo-container img {
@@ -69,49 +63,42 @@
             object-fit: cover;
         }
 
-        /* 文字資訊 */
-        h1 { font-size: 28px; margin: 0; }
-        .job-title { font-size: 18px; color: var(--text-main); margin: 4px 0; }
-        .location { font-size: 14px; color: var(--text-sub); margin-bottom: 16px; }
+        h1 { margin: 0; font-size: 28px; }
+        .job-title { margin: 4px 0; color: var(--text-sub); }
+        .location { color: var(--text-sub); font-size: 14px; }
 
-        /* 聯絡資訊 */
         .contact-info {
             display: flex;
-            flex-wrap: wrap;
             gap: 15px;
+            flex-wrap: wrap;
+            margin: 10px 0;
             font-size: 14px;
-            margin-bottom: 20px;
         }
+
         .contact-info a {
             color: var(--linkedin-blue);
             text-decoration: none;
             font-weight: 600;
         }
-        .contact-info a:hover { text-decoration: underline; }
 
         .btn-primary {
-            background-color: var(--linkedin-blue);
+            display: inline-block;
+            background: var(--linkedin-blue);
             color: white;
             padding: 8px 16px;
             border-radius: 20px;
             text-decoration: none;
             font-weight: 600;
-            display: inline-block;
         }
 
-        /* 章節標題 */
-        h2 {
-            font-size: 20px;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
+        h2 { margin-top: 0; font-size: 20px; }
 
-        /* 學歷與經歷項目 */
         .item {
             display: flex;
-            gap: 16px;
-            margin-bottom: 20px;
+            gap: 15px;
+            margin-bottom: 15px;
         }
+
         .item-logo {
             width: 48px;
             height: 48px;
@@ -119,112 +106,161 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 11px;
             font-weight: bold;
-            font-size: 10px;
-            border-radius: 4px;
+            border-radius: 6px;
         }
-        .item-content h3 { font-size: 16px; margin: 0; }
-        .item-content p { margin: 2px 0; font-size: 14px; color: var(--text-sub); }
 
-        /* 技能標籤 */
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
         }
+
         .skill-tag {
             background: #e7f3ff;
             color: var(--linkedin-blue);
-            padding: 5px 12px;
+            padding: 6px 12px;
             border-radius: 15px;
-            font-size: 14px;
             font-weight: 600;
-        }
-
-        @media (max-width: 600px) {
-            .photo-container { width: 120px; height: 120px; top: -60px; }
-            .profile-header { padding-top: 60px; }
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="cover-photo"></div>
+<div class="cover-photo"></div>
 
-    <div class="container">
-        <header class="card profile-header">
-            <div class="photo-container">
-                <img src="images/aa.jpg">
-            </div>
-            <h1>同氏月(mikila)</h1>
-            <p class="job-title">NguyetChay</p>
-            <p class="job-title">數位多媒體設計師 | 視覺傳達專業</p>
-            <p class="location">黎明技術學院 · 台灣，新北市</p>
-            
-            <div class="contact-info">
-                <span>📧 <a href="mailto:dongnguyet504@gmail.com">dongnguyet504@gmail.com</a></span>
-                <span>📞 <a href="tel:0970126287">0970126287</a></span>
-            </div>
-            
-            <a href="mailto:dongnguyet504@gmail.com" class="btn-primary">與我聯絡</a>
-        </header>
+<div class="container">
 
-        <section class="card">
-            <h2>關於我</h2>
-            <p>
-                你好！我是同氏月，目前就讀於 **黎明技術學院 數位多媒體系**。
-                我熱衷於數位多媒體創作與視覺藝術，專注於透過設計解決問題並傳達創意故事。
-                在學期間積極鑽研多媒體相關技術，追求在影像處理與數位內容產出上的卓越表現。
-            </p>
-        </section>
+    <!-- 個人資料 -->
+    <header class="card profile-header">
+        <div class="photo-container">
+            <img src="images/aa.jpg" alt="profile">
+        </div>
 
-        <section class="card">
-            <h2>家鄉</h2>
-            <div class="item">
-                <div class="item-logo">VIETNAM</div>
-                <div class="item-content">
-                    <h3>越南北寧省陸岸縣諒心社（同心－𡶀嘉）</h3>
-                    <p>高中畢業 · 生活不錯，工作穩定。</p>
-                </div>
-            </div>
-        </section>
-        
-          <section class="card">
-            <h2>現在正在生活(TAIWAN)</h2>
-            <div class="item">
-                <div class="item-logo">LIT</div>
-                <div class="item-content">
-                    <h3>黎明技術學院 (Lee-Ming Institute of Technology)</h3>
-                    <p>數位多媒體系 · 學士學位。</p>
-                    <p>2024年 - 2028年 (預計)</p>
-          <section class="card">
-            <h2>我目前在Garmin工作</h2>
-            <div class="item">
-                <div class="item-logo">GARMIN</div>
-                <div class="item-content">
-                    <h3>新北市林口區（Linkou, New Taipei City, Taiwan）</h3>
-                    <p>實習並提升經驗。</p>
-                    <p>2024年 - 2028年 (預計)</p>
-                </div>
-            </div>
-        </section>
+        <h1>同氏月（mikila）</h1>
+        <p class="job-title">NguyetChay</p>
+        <p class="job-title">數位多媒體設計師｜視覺傳達專業</p>
+        <p class="location">黎明技術學院 · 台灣新北市</p>
 
-        <section class="card">
-            <h2>爱好</h2>
-            <div class="skills">
-                <div class="skill-tag">聽音樂</div>
-                <div class="skill-tag">看電影</div>
-                <div class="skill-tag">看書</div>
-                <div class="skill-tag">做運動</div>
-                <div class="skill-tag">旅行</div>
-                <div class="skill-tag">玩遊戲</div>
-            </div>
-        </section>
-    </div>
+        <div class="contact-info">
+            <span>📧 <a href="mailto:dongnguyet504@gmail.com">電子郵件</a></span>
+            <span>📞 <a href="tel:0970126287">電話</a></span>
+            <span>📘 <a href="https://www.facebook.com/dongnguyet.thy09" target="_blank">Facebook</a></span>
+        </div>
 
-    <footer style="text-align: center; padding-bottom: 40px; color: var(--text-sub); font-size: 12px;">
-        © 2026 同氏月 | 專業個人網頁專案
-    </footer>
+        <a class="btn-primary" href="mailto:dongnguyet504@gmail.com">聯絡我</a>
+    </header>
+
+    <!-- 關於我 -->
+    <section class="card">
+        <h2>關於我</h2>
+        <p>
+            我目前就讀於黎明技術學院數位多媒體設計系，
+            熱愛視覺設計與數位創作，專注於影像與內容製作。
+        </p>
+    </section>
+
+    <!-- 家鄉 -->
+    <section class="card">
+        <h2>家鄉</h2>
+        <div class="item">
+            <div class="item-logo">VN</div>
+            <div>
+                <h3>越南北寧省</h3>
+                <p>我的家鄉，文化豐富且生活安穩。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 學歷 -->
+    <section class="card">
+        <h2>學歷</h2>
+        <div class="item">
+            <div class="item-logo">LIT</div>
+            <div>
+                <h3>黎明技術學院</h3>
+                <p>數位多媒體設計系（2024 - 2028）</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作經驗 -->
+    <section class="card">
+        <h2>工作經驗</h2>
+        <div class="item">
+            <div class="item-logo">GAR</div>
+            <div>
+                <h3>Garmin 林口</h3>
+                <p>實習設計與數位內容支援</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 越南景點 -->
+    <section class="card">
+        <h2>越南美麗景點</h2>
+
+        <div class="item">
+            <div class="item-logo">HLB</div>
+            <div>
+                <h3>下龍灣</h3>
+                <p>世界自然遺產，石灰岩海上奇景。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-logo">DNG</div>
+            <div>
+                <h3>峴港</h3>
+                <p>現代海濱城市與美麗海灘。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-logo">HỘI</div>
+            <div>
+                <h3>會安古鎮</h3>
+                <p>充滿文化與歷史的燈籠古城。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-logo">SP</div>
+            <div>
+                <h3>沙壩</h3>
+                <p>梯田與山景，非常壯麗。</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-logo">PQ</div>
+            <div>
+                <h3>富國島</h3>
+                <p>越南最美的海島之一。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 興趣 -->
+    <section class="card">
+        <h2>興趣</h2>
+        <div class="skills">
+            <div class="skill-tag">聽音樂</div>
+            <div class="skill-tag">看電影</div>
+            <div class="skill-tag">旅行</div>
+            <div class="skill-tag">設計</div>
+            <div class="skill-tag">遊戲</div>
+        </div>
+    </section>
+
+</div>
+
+<footer style="text-align:center; padding:20px; font-size:12px; color:#666;">
+    © 2026 同氏月 個人作品集
+</footer>
 
 </body>
 </html>
